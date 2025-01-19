@@ -38,6 +38,7 @@ public class MainPageTest {
         WebElement searchField = driver.findElement(By.cssSelector("#sb_form_q"));
         searchField.sendKeys(input);
         searchField.submit();
+        // it is just a comment
 
         WebElement searchPageField = driver.findElement(By.cssSelector("#sb_form_q"));
         assertEquals(input , searchPageField.getAttribute("value"));
